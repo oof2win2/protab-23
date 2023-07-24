@@ -1,0 +1,226 @@
+MatejE
+8 Robin Pavel Michal
+2 Franta
+2 MatejH
+4 Marek Marian
+8 Robin Pavel Kubik
+12 MatejH Majda Filip Kacka
+4 Franta Majda
+
+MatejH
+8 Majda Filip Kacka
+8 HonzaKop Jirka Marian
+12 MatejE Marek HonzaRac Lukas
+2 Majda
+2 Franta
+4 Franta Robin
+8 Majda Filip Riky
+4 HonzaKop Pavlik
+
+Riky
+4 HonzaRac Lukas
+2 Filip
+2 HonzaRac
+4 Olga Prokop
+8 Filip Majda MatejH
+4 HonzaRac Marek
+8 Olga Prokop Pavel
+
+Marek
+8 HonzaRac Riky Olga Prokop Pavel
+12 MatejE Robin Pavel Kubik
+8 Marian Jirka Andy
+8 HonzaRac Riky Olga
+2 MatejE
+4 MatejE Robin
+4 MatejE Franta
+2 HonzaRac
+4 HonzaRac Riky
+
+Pavel
+2 Robin
+4 Robin MatejE
+4 Robin Franta
+2 Prokop
+4 Prokop Olga
+
+Prokop
+2 Kubik
+4 Kubik Michal
+2 Adam
+8 Olga HonzaKoc Otakar
+12 Pavel Robin Franta MatejH
+8 Olga HonzaKoc Filip Majda
+4 Olga HonzaKoc Otakar Andy
+4 Olga Kacka
+
+Kubik
+4 Adam Andy
+12 Pavel Robin Franta MatejH
+8 Prokop Olga HonzaKoc Filip Majda
+8 Prokop Olga HonzaKoc
+8 Adam Andy Pavlik
+4 Michal Lukas
+2 Adam
+4 Prokop Olga
+2 Prokop
+
+Andy
+12 Jirka Marian Marek HonzaRac
+8 Andy Jirka Marian Marek
+2 Otakar
+4 Otakar HonzaKoc
+8 Andy Adam Kubik Pavel
+12 Adam Prokop Olga Riky
+2 Pavlik
+4 Adam Prokop
+8 Jirka HonzaKop MatejH Majda Filip
+4 Adam Michal
+
+Jirka
+12 HonzaKop MatejH Majda Filip
+8 Andy Adam Michal
+2 Marian
+4 Marian Tomas
+12 Pavlik Otakar HonzaKoc Kacka
+2 Andy
+4 Marian Marek
+8 Andy Adam Kubik
+8 HonzaKop MatejH Majda
+
+HonzaKoc
+8 Filip Majda Robin Pavel
+8 Filip Majda Robin
+4 Olga Prokop
+4 Kacka Riky
+12 Filip Riky HonzaRac Lukas
+2 Kacka
+8 Otakar HonzaKop MatejH
+4 Filip Majda
+2 Filip
+
+Filip
+2 HonzaKoc
+4 Majda Franta
+4 Riky Olga
+2 Kacka
+4 Majda Robin
+
+Otakar
+8 HonzaKoc Filip Majda
+8 Andy Jirka Marian
+4 HonzaKoc Kacka
+8 Andy Adam Kubik
+2 HonzaKop
+4 Pavlik Jirka
+
+Tomas
+4 Lukas Michal
+4 Marek MatejE
+8 Marek MatejE Franta
+2 Marian
+2 Lukas
+8 Lukas Michal Pavel Prokop Olga
+8 Marek MatejE Robin
+
+Robin
+4 MatejE Marek
+4 Franta MatejH
+8 Majda Filip HonzaKoc Olga
+2 Robin MatejE
+2 Robin Franta
+8 Majda Filip Riky
+4 Majda Filip
+
+Adam
+12 Kubik Pavel Robin Franta
+4 Andy Pavlik
+2 Michal
+8 Prokop Olga Riky
+4 Kubik Pavel
+2 Prokop
+
+Michal
+2 Adam
+4 Lukas Marian
+2 Kubik
+8 Pavel Robin MatejE Marek
+
+Lukas
+8 Michal Pavel Prokop Olga
+4 HonzaRac Riky
+8 Marian Marek MatejE
+2 Tomas
+4 Michal Pavel
+2 Marian
+12 Tomas Marek MatejE Franta
+
+HonzaKop
+8 MatejH Majda Filip HonzaKoc Olga
+8 Olga Andy Adam
+4 MatejH Franta
+4 MatejH MatejE
+2 Pavlik
+4 Otakar HonzaKoc
+2 MatejH
+8 MatejH Franta MatejE Robin
+12 MatejH Majda Filip Riky
+
+Franta
+4 MatejE Marek
+4 Robin Pavel
+2 Robin
+2 MatejE
+12 MatejE Marek HonzaRac Lukas
+
+Majda
+4 MatejH HonzaKop
+4 Robin Pavel
+8 Robin Pavel Kubik
+2 Robin
+2 Filip
+4 Filip HonzaKoc
+
+Kacka
+12 HonzaKoc Otakar Andy Jirka Marian
+8 Olga Prokop Pavel
+2 Riky
+2 Filip
+4 Riky HonzaRac
+8 Kacka Filip Majda MatejH
+4 Filip Majda
+12 Olga Prokop Kubik Michal
+4 HonzaKoc Otakar
+
+Marian
+4 Marek HonzaRac
+4 Jirka Andy
+2 Tomas
+2 Marek
+
+HonzaRac
+2 Lukas
+2 Marek
+8 Marek MatejE Robin
+4 Riky Filip
+8 Riky Filip Majda MatejH
+4 Lukas Michal
+4 Riky Kacka
+8 Marek MatejE Franta Majda
+
+Olga
+12 HonzaKoc Otakar Andy Jirka Marian
+8 HonzaKoc Filip Majda
+4 Prokop Adam
+2 HonzaKoc
+2 Riky
+4 Prokop Kubik
+12 HonzaKoc Filip Majda Franta
+4 HonzaKoc Otakar
+
+Pavlik
+8 HonzaKop MatejH MatejE
+4 Otakar HonzaKop
+2 Otakar
+8 Otakar HonzaKoc Olga
+4 Otakar HonzaKop MatejH
