@@ -4,55 +4,13 @@ from sys import stdin
 
 lines = []
 
-# read all of the stdin into the variable rawdata as a list of lines until EOF
-
 for line in stdin:
 	lines.append(line.strip().split(";"))
+# with open("/Users/oof2win2/git/protab-23/kamen/02.in", "r") as f:
+# 	for line in f.readlines():
+# 		lines.append(line.strip().split(";"))
 
-choices = {}
-scores = {}
-color_scores = {}
-usefulness = {}
-
-def set_choice(color: str, agent: str, choice: str):
-	if color not in choices:
-		choices[color] = dict()
-	choices[color][agent] = choice
-
-def get_choice(color: str, agent: str) -> str:
-	if color not in choices:
-		return None
-	if agent not in choices[color]:
-		return None
-	return choices[color][agent]
-
-def score(color: str, agent: str, pts: int):
-	if color not in scores:
-		scores[color] = dict()
-	if agent not in scores[color]:
-		scores[color][agent] = pts
-	else:
-		scores[color][agent] += pts
-	
-	if color not in color_scores:
-		color_scores[color] = pts
-	else:
-		color_scores[color] += pts
-	
-	key = f"{color};{agent}"
-	if key not in usefulness:
-		usefulness[key] = 1
-	else:
-		usefulness[key] += 1
-
-def renew(color: str, agent: str):
-	key = f"{color};{agent}"
-	if key not in usefulness:
-		usefulness[key] = -1
-	else:
-		usefulness[key] -= 1
-	
-	set_choice(color, agent, None)
+past_actions = {}
 
 for line in lines:
 	action = line[1]
@@ -60,23 +18,53 @@ for line in lines:
 	agent = line[3]
 
 	key = f"{color};{agent}"
-	if key not in usefulness:
-		usefulness[key] = 0
 
-	if action in ["kámen", "nůžky", "papír"]:
-		set_choice(color, agent, action)
-	elif action == "skóruje":
-		choice = get_choice(color, agent)
-		if choice == "kámen":
-			score(color, agent, 5)
-		elif choice == "papír":
-			score(color, agent, 6)
-		elif choice == "nůžky":
-			score(color, agent, 7)
-	elif action == "obnovuje":
-		renew(color, agent)
+	if key not in past_actions:
+		past_actions[key] = [line]
+	else:
+		past_actions[key].append(line)
 
-# print(usefulness)
-for pair in sorted(usefulness.items(), key=lambda x:x[1], reverse=True):
-	print(pair[0])
-	# print(sorted(usefulness[color].items(), key=lambda x:x[1], reverse=True))
+found_own = []
+
+options = ['nůžky', 'papír', 'nůžky', 'papír', 'papír', 'nůžky', 'kámen', 'nůžky']
+
+for key in past_actions:
+	actions = past_actions[key]
+	i = 0
+	for line in actions:
+		action = line[1]
+		agent = line[3]
+		if action == "obnovuje":
+			continue
+		if action == "skóruje":
+			continue
+		if action == "bojuje":
+			# if there haven't been that many actions sent as i hav options, it's not mee
+			# we want to score and send the whole sequence before doing nothing
+			# by fighting
+			if i != len(options):
+				break
+			continue
+		else:
+			# kamen, nuzky, papir
+
+			# if this agent has more actions than i have options, then it's not me
+			if i > len(options):
+				break
+
+			# if the chosen action is not in line with my choices, it's not me
+			choice = options[i]
+			if action != choice:
+				break
+			i += 1
+	else:
+		# if it didnt break then it will run this
+		if i == len(options) or i == 1:
+			found_own.append(key)
+
+# print(f"found {found_own}")
+for item in found_own:
+	print(item)
+for key in past_actions:
+	if key not in found_own:
+		print(key)
